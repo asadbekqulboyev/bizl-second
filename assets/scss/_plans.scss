@@ -1,0 +1,161 @@
+.plans {
+    padding-top: 142px;
+    padding-bottom: 173px;
+    @media (max-width:992px) {
+        padding-top: 46px;
+        padding-bottom: 82px;
+    }
+    .container {
+        max-width: 1271px;
+        @media (max-width:992px) {
+            flex-direction: column;
+            gap: 42px;
+        }
+        .plans_info {
+            max-width: 345px;
+            .plans_title {
+                color: #000;
+                font-size: 60px;
+                font-style: italic;
+                font-weight: 800;
+                padding-bottom: 2px;
+                @media (max-width:992px) {
+                    font-size: 36px;
+                    text-align: center;
+                }
+            }
+
+            
+        }
+
+    }
+
+    &_price {
+        padding: 43px 22px 27px 33px;
+        border-radius: 20px;
+        background: #FFF;
+        max-width: 625px;
+        position: relative;
+        gap: 66px;
+        box-shadow: 0 0 30px rgba(149, 93, 233, 1);
+        @media (max-width:992px) {
+            gap: 28px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 20px;
+            top: 51%;
+            left: 50%;
+            width: 102%;
+            height: 100%;
+            background: linear-gradient(103deg, #050AA0 0%, #9700d3 100%);
+            filter: blur(40px);
+            z-index: -1;
+            border-radius: 20px;
+            transform: translate(-50%, -50%);
+            @media (max-width:992px) {
+                width: 91%;
+                height: 96%;
+            }
+        }
+        .price_top {
+            .price_title {
+                color: #252432;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 700;
+            }
+
+            .price_subtitle {
+                color: #8987A1;
+                font-family: 'Inter';
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+            }
+        }
+        .price_lists {
+            gap: 18px 0;
+            padding-left: 17px;
+            @media (max-width:992px) {
+               flex-direction: column;
+            }
+            li {
+                gap:13px;
+                width: 50%;
+                @media (max-width:992px) {
+                   width: 100%;
+                 }
+            }
+        }
+        .price_btn_lists {
+            .price_btn {
+                padding: 14px 10px 11px;
+                width: calc(50% - 16.5px);
+                border-radius: 10px;
+                background: linear-gradient(93deg, rgba(151, 0, 211, 0.25) 0%, rgba(5, 10, 160, 0.25) 100%);
+                .price_sum {
+                    color: #3A3A3A;
+                    font-family: "Plus Jakarta Sans";
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%;
+                    span:last-child {
+                        color: rgba(58, 58, 58, 0.50);
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 120%;
+                        letter-spacing: -1.2px;
+                    }
+                    .sum_link{
+                    color: #8987A1;
+                    font-family: 'Inter';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    }
+                }
+                @media (max-width:992px) {
+                    width: 100%;
+                    max-width: 267px;
+                 }
+            }
+            @media (max-width:992px) {
+                margin-top: 16px;
+                flex-direction: column;
+                gap: 29px;
+                justify-content: center;
+                align-items: center;
+                margin-left: -10px;
+             }
+        }
+    }
+    .btn_content {
+        display: flex;
+        margin-top: 54px;
+        gap: 40px;
+        @media (max-width:992px) {
+            gap: 20px;
+           .arrow{
+            width: 50px;
+            margin-top: 15px;
+           }
+        }
+    }
+    .bottoms{
+        display: none;
+        @media (max-width:992px) {
+            display: flex;
+            margin-top: 0;
+        }
+    }
+    &_info .btn_content:not(.bottoms){
+        @media (max-width:992px) {
+            display: none !important;
+        }
+    }
+    
+}
