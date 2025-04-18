@@ -1,0 +1,140 @@
+.steps {
+  padding-top: 180px;
+  @media (max-width: 1400px) {
+    padding-bottom: 40px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 46px;
+    padding-bottom: 0px;
+  }
+
+  &_items {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25%;
+    position: relative;
+    .steps_img{
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    @media (max-width: 768px) {
+      width: calc(50% - 10px);
+    }
+    &:first-child {
+      img:last-child {
+        top: 180px;
+        
+      }
+    }
+    &:nth-child(2) {
+      .img_bg {
+        transform: rotate(-6.774deg);
+      }
+      .steps_title {
+        bottom: 30px;
+      }
+    }
+    &:nth-child(3) {
+      .img_bg {
+        transform: rotate(85.708deg);
+      }
+      .steps_title {
+        bottom: 30px;
+      }
+    }
+    &:nth-child(4) {
+      .img_bg {
+        transform: rotate(20.333deg);
+      }
+    }
+  }
+  &_number {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 64px;
+    font-style: italic;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 556px) {
+      width: 80px;
+      height: 80px;
+      font-size: 44px;
+    }
+  }
+  &_img {
+    position: relative;
+    img:last-child {
+      position: absolute;
+      top: 170px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      @media (max-width: 556px) {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+  &_title {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    position: absolute;
+    bottom: 56px;
+  }
+  .section_title {
+    text-align: center;
+  }
+  &_bottom {
+    max-width: 903px;
+    margin: 0 auto;
+    .intro_title {
+      gap: 0;
+      .advantages_title {
+        font-size: 40px;
+        @media (max-width: 768px) {
+          font-size: 32px;
+        }
+        @media (max-width: 556px) {
+          font-size: 24px;
+        }
+      }
+    }
+    .arrow {
+      @media (max-width: 556px) {
+        width: 50px;
+      }
+    }
+  }
+  &_description {
+    color: #3a3a3a;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  &_btn {
+    margin-top: 54px;
+    justify-content: center;
+    gap: 15px;
+  }
+}
